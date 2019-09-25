@@ -41,11 +41,11 @@ class SarahblPlayer extends Player
         // How can i display the result of each round ? $this->prettyDisplay()
         // -------------------------------------    -----------------------------------------------------
 	$lastop = $this->result->getLastChoiceFor($this->opponentSide);
-        if ($lastop == "paper")
+        if ($lastop == "paper") #Je suppose que mon adversaire jouera papier à nouveau
 		return parent::scissorsChoice();
-	if ($lastop == "scissors")
+	if ($lastop == "scissors") #Je suppose que mon adversaire jouera ciseaux
 		return parent::rockChoice();
-	if ($lastop == "rock")
+	if ($lastop == "rock") #je suppose que mon adversaire jouera pierre
            return parent::paperChoice();
         return parent::paperChoice();            
   }
