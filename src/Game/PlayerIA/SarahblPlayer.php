@@ -42,7 +42,7 @@ class SarahblPlayer extends Player
         // -------------------------------------    -----------------------------------------------------
 	$lastop = $this->result->getLastChoiceFor($this->opponentSide);
         if ($lastop == "paper")
-		return parent::paperChoice();
+		return parent::scissorsChoice();
 	if ($lastop == "scissors")
 		return parent::rockChoice();
 	if ($lastop == "rock")
